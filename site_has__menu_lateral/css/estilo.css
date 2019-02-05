@@ -1,0 +1,196 @@
+/*CSS site da ETEC Horácio Augusto da Silveira*/
+
+/*apoio para a estrutura da página 
+
+http://jsfiddle.net/pranavcbalan/BGLwM/4/ (não deu certo)
+*/
+
+/*cores que devem ser utilizadas
+Azul
+    #21212d;
+Amarelo
+    #e69138;
+*/
+/*
+body{
+    background-color: #c9c9ca;
+    color: #111;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    font-size: 18px;
+    position: relative;
+   
+}*/
+html, body{ height:100%; margin:0; 
+  background-color: #c9c9ca;
+  color: #111;
+  font-family: Verdana, Arial, Tahoma, sans-serif;
+  font-size: 18px;
+}
+header{ height:50px; background:lightcyan; }
+footer{ height:50px;  }
+
+/* Trick */
+body{ 
+  display:flex; 
+  flex-direction:column; 
+  text-align: justify;
+}
+
+footer{
+  margin-top:auto; 
+  width: 100%;
+  /*bottom: 0;*/
+  height: 100px;
+  /* STYLING */
+  background: #21212d;
+  color: white;
+  display: table;
+}
+/*teste h1
+-Para verificar espaçamento em relação a posição fixa do menu 
+-Substituir margin-top para uma div*/
+
+
+#header {
+  /* posicionamento */
+  height: 150px;
+  width: 100%;
+  /* estilo */
+  background: #590202;
+  color: #f2f2f2;
+  display: table;
+}
+
+/*INICIO DEFINICAO DO MENU PRINCIPAL*/
+#menuprincipal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #21212d;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    margin-left:0;
+  }
+  
+ #menuprincipal ul li {
+    float: left;
+    
+  }
+  
+  #menuprincipal ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #menuprincipal ul li a:hover:not(.active) {
+    background-color: #393955;
+  }
+  
+  .active {
+    background-color: #e69138;
+  }
+  /*FIM DA DEFINICAO MENU*/
+
+  /*BLOCO DE TEXTO DA PAGINA*/
+  #conteudo{
+    /*position:absolute; */
+    top:20%; 
+    left:40%;
+    width:78%; 
+    height:75%; 
+    border:none #c0c0c0 1px;
+  }
+/*
+  #footer {
+  
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+    background: #21212d;
+    color: white;
+    display: table;
+  }*/
+
+  #corpo_index{
+		position:absolute; 
+		top:20%; /*210px*/
+		left:20%;/*500px*/
+		width:78%; /*500px*/
+		height:75%; /*400px*/
+		border:none #c0c0c0 1px;/*trocar "none" para "solid" quando redimensionar*/
+	}
+  
+  #frame{
+		position: relative;
+		height: 100%;
+		width: 100%; 
+    border:none;/*remover para teste*/
+    left:20px;
+  }
+  
+/*menu vertical*/
+nav#menu_lateral2 li {
+  padding:10px;
+  background-color: #21212d;
+  margin : 0.5px;
+}
+
+nav#menu_lateral2 ul {
+  list-style : none;
+  position : absolute; 
+  top : 100px;
+  left: -40px;
+  
+}
+
+nav#menu_lateral2 li:hover{
+  background-color: #393955;
+}
+
+nav#menu_lateral2 li {
+  color : #fff; /* cor do texto*/
+  padding:10px;
+  background-color: #21212d;
+  margin : 2px;
+}
+
+nav#menu_lateral2 ul a{
+  text-decoration: none;  
+}
+
+/*Botões*/
+/*Estilo para os botões*/
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #21212d;
+  color: #fff;
+  }
+  .btn:hover{
+  background-color: #393955;
+  cursor: pointer;
+  }
+
+  label{
+		color:#5a5a5a;
+		font-size: 15px;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }

@@ -1,0 +1,3 @@
+Cores principais do site: 
+amarelo = e69138
+azul = 21212d
